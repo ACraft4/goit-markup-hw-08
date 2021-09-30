@@ -704,6 +704,12 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .hero-section {
+    padding: 118px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
     padding: 200px 0;
   }
 }
@@ -771,32 +777,57 @@ h6 {
 
 .main-section {
   margin: 0;
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    padding: 94px 0;
+  }
 }
 
 .main-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
 }
 
 .main-list__item {
-  width: 270px;
-  margin-right: 30px;
+  margin: 15px;
 }
 
-.main-list__item:nth-last-child(1) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .main-list__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-list__item {
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+        flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .main-list__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 767px) {
+  .main-list__title {
+    text-align: start;
+  }
 }
 
 .main-list__box {
