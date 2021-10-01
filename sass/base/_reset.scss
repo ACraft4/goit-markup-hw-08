@@ -15,8 +15,6 @@ h6 {
     margin-bottom: 0;
 }
 .list {
-    padding: 0;
-    margin: 0;
     list-style: none;
 }
 .link {
@@ -26,6 +24,11 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 .align-item {
 align-items: center;
