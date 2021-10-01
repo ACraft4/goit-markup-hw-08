@@ -1,6 +1,10 @@
 .works-section {
     margin: 0;
     padding-bottom: 94px;
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: flex
+    }
   }
   .works-list {
     display: flex;
@@ -14,6 +18,7 @@
       margin-right: 0;
     }
   }
+
   .works-list__text {
     font-weight: 700;
     line-height: 1.14;
