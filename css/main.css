@@ -523,6 +523,18 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-email-form {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-email-form {
+    width: 100%;
+  }
+}
+
 .footer-email-form__item {
   color: var(--main-color);
   font-size: 14px;
@@ -553,8 +565,28 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .footer-form__button {
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,6 +614,12 @@ ul {
 
 .footer-form__button:hover {
   background-color: var(--acent-hover-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form__button {
+    margin: 0 auto;
+  }
 }
 
 .bfooter-form__text {
@@ -1079,7 +1117,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-address {
     margin-right: 70px;
   }
@@ -1098,7 +1136,7 @@ ul {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1110,6 +1148,21 @@ ul {
             align-items: baseline;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1149,7 +1202,6 @@ ul {
 }
 
 .footer-social-title {
-  text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -1157,6 +1209,12 @@ ul {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--main-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-social-title {
+    text-align: center;
+  }
 }
 
 .footer-social-list {
