@@ -1,8 +1,17 @@
 .header {
 border-bottom: 1px solid #ececec;
-    .container {
+    // .container {
+    // display: flex;
+    // }
+}
+.flex-container {
     display: flex;
-    }
+    align-items: center;
+}
+.header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .header-list {
 display: flex;
