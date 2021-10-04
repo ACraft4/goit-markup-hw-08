@@ -20,18 +20,12 @@
   }
   .footer-box {
     text-align: center;
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
       justify-content: space-around;
       }
-    @media screen and (min-width: 1200px) {
-      text-align: start;
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-    } 
   }
   .footer-list__item {
     margin-bottom: 9px;
